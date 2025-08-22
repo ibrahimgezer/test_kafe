@@ -1,0 +1,12 @@
+/* Modern mavi tema renkleri */
+:root {
+    --primary-dark: #1a365d;
+    --primary-main: #2c5282;
+    --primary-light: #4299e1;
+    --primary-soft: #ebf8ff;
+    --accent-color: #3182ce;
+    --text-primary: #2d3748;
+    --text-secondary: #4a5568;
+    --border-color: #e2e8f0;
+    --light-gray: #f7fafc;
+}

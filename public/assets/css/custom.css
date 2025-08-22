@@ -1,0 +1,283 @@
+/* Modern mavi tema renkleri */
+:root {
+    --primary-dark: #1a365d;
+    --primary-main: #2c5282;
+    --primary-light: #4299e1;
+    --primary-soft: #ebf8ff;
+    --accent-color: #3182ce;
+    --text-primary: #2d3748;
+    --text-secondary: #4a5568;
+    --light-gray: #f7fafc;
+}
+
+/* Genel stiller */
+body {
+    background-color: var(--light-gray);
+    color: var(--text-primary);
+}
+/* Genel stiller */
+.dark {
+    background: rgb(3 15 31);
+}
+
+/* Başlık stilleri */
+.signin-gradient-text {
+    color: var(--primary-dark);
+    font-weight: 700;
+    font-size: 2.5rem;
+    letter-spacing: 0.5px;
+}
+
+/* Buton stilleri */
+.btn-signin {
+    background-color: var(--primary-main);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11);
+}
+
+.btn-signin:hover {
+    background-color: var(--primary-dark);
+    color: var(--bs-white);
+    transform: translateY(-2px);
+    box-shadow: 0 7px 14px rgba(50, 50, 93, 0.1);
+}
+
+/* Tab container styles */
+#loginTab {
+    background: white;
+    border-radius: 8px 8px 0 0;
+    overflow: hidden;
+}
+
+#loginTab .nav-link {
+    color: var(--text-secondary);
+    border: none;
+    border-radius: 0;
+    padding: 16px;
+    font-size: 16px;
+    font-weight: 600;
+    background: white;
+    transition: all 0.3s ease;
+}
+
+#loginTab .nav-link.active {
+    background: var(--primary-soft);
+    color: var(--primary-main);
+    font-weight: 600;
+    border-bottom: 3px solid var(--primary-main);
+}
+
+/* Modal stilleri */
+.modal-content {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.modal-header {
+    padding: 20px;
+}
+
+.modal-title {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.modal-body {
+    padding: 25px;
+}
+
+/* Form elemanları */
+.form-control {
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 12px 15px;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: var(--primary-light);
+    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.2);
+}
+
+.form-label {
+    font-weight: 500;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+}
+
+/* Özel Kapat Butonu */
+.btn-close-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--primary-main);
+    color: white;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: -25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    z-index: 1;
+}
+
+.btn-close-circle:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-2px) scale(1.05);
+}
+
+.modal-footer {
+    padding: 20px;
+    position: relative;
+}
+
+/* İçerik stilleri */
+.content-color {
+    color: var(--text-secondary);
+    font-weight: 400;
+}
+
+/* Marquee arkaplanı */
+.marquee-block-wrapper {
+    background-color: var(--primary-soft);
+}
+
+.btn-close {
+    --bs-btn-close-color: var(--bs-white);
+    --bs-btn-close-opacity: 0.5;
+    --bs-btn-close-hover-opacity: 0.75;
+    --bs-btn-close-focus-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+    --bs-btn-close-focus-opacity: 1;
+    --bs-btn-close-disabled-opacity: 0.25;
+    --bs-btn-close-white-filter: invert(1) grayscale(100%) brightness(200%);
+    box-sizing: content-box;
+    width: 1em;
+    height: 1em;
+    padding: 0.25em 0.25em;
+    color: var(--bs-btn-close-color);
+    background: transparent var(--bs-btn-close-bg) center / 1em auto no-repeat;
+    border: 0;
+    border-radius: 0.375rem;
+    opacity: var(--bs-btn-close-opacity);
+}
+
+/* QR Kod Butonu Stilleri */
+.btn-qrsignin {
+    color: var(--primary-main);
+    border: 2px solid var(--primary-main);
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.btn-qrsignin:hover {
+    background-color: var(--primary-soft);
+    color: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-color: var(--primary-dark);
+}
+
+.btn-qrsignin svg {
+    width: 20px;
+    height: 20px;
+}
+
+.qr-link {
+    color: var(--bs-blue);
+    padding: calc(12px + (15 - 12) * ((100vw - 320px) / (1920 - 320)));
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+    border-radius: 35px;
+    text-decoration: underline;
+    margin: .5rem 0 0;
+    display: block;
+}
+
+.gmail-gradient-text {
+    background: linear-gradient(90deg, #656363, #0a0f15);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 800;
+    -webkit-text-fill-color: transparent;
+}
+
+.signin-gradient-text {
+    background: linear-gradient(90deg, #ffffff, #0a0f15);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 16px;
+}
+
+.icon-gradient {
+    background: linear-gradient(90deg, #ea4335, #fbbc05, #34a853, #4285f4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.btn-signin {
+    background: #f2f2f2;
+    border: none;
+    border-radius: 0.5rem;
+    color: #3a4550;
+    font-weight: 600;
+}
+
+.white-btn {
+    color: rgba(var(--title-color), 1);
+    background-color: rgba(var(--white), 1);
+    border: 1px solid rgba(var(--border-color), 1);
+}
+
+/* Fare üzerine gelince el işareti çıksın ve hover efekti olsun */
+.clickable-div {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Fareyle üzerine gelince hafifçe vurgula */
+.clickable-div:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu_li {
+    margin-top: -100px;
+    background: var(--bs-info-text-emphasis);
+    border-radius: 50%;
+    width: 75px;
+    height: 80px;
+    text-align: center;
+    align-content: center;
+    color: white;
+}
+
+.bottom-side_menu-button {
+    margin: -72px auto auto;
+    background: var(--bs-blue);
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    text-align: center;
+    align-content: center;
+    color: white;
+    display: block;
+}
